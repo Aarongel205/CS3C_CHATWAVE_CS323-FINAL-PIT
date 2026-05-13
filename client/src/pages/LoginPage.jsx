@@ -59,18 +59,6 @@ export default function LoginPage() {
           {errorType === "INVALID_CREDENTIALS" && (
             <div style={{ background: "rgba(248,113,113,0.08)", border: "1px solid rgba(248,113,113,0.3)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
               <div style={{ color: "#f87171", fontWeight: 700, fontSize: 13, marginBottom: 6 }}>❌ Invalid email or password</div>
-              <div style={{ color: "#9898a8", fontSize: 12, lineHeight: 1.7 }}>
-                Double-check your credentials. If you just created your account, your sign-up may not have completed —
-                try <Link to="/register" style={{ color: "#a584ff", textDecoration: "none", fontWeight: 600 }}>registering again</Link>.
-              </div>
-              <div style={{ marginTop: 10, background: "#1a1a24", borderRadius: 8, padding: "10px 12px", border: "1px solid #2a2a3a" }}>
-                <div style={{ color: "#6b6b7f", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 4 }}>Common causes</div>
-                <ul style={{ color: "#9898a8", fontSize: 12, lineHeight: 1.9, paddingLeft: 16, margin: 0 }}>
-                  <li>Email confirmation was ON when you signed up — check your inbox</li>
-                  <li>The profile trigger failed — try registering with a different username</li>
-                  <li>Wrong password — passwords are case-sensitive</li>
-                </ul>
-              </div>
             </div>
           )}
 
