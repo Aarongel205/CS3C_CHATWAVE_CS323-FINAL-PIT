@@ -27,11 +27,24 @@ app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173", creden
 app.use(express.json());
 
 // ─── Auth Middleware ───────────────────────────────────────────────────────────
+// Cache token lookups to avoid calling Supabase on every request under load
+const tokenCache = new Map(); // token -> { user, expiresAt }
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
 const auth = async (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
   if (!token) return res.status(401).json({ error: "No token" });
+
+  const cached = tokenCache.get(token);
+  if (cached && cached.expiresAt > Date.now()) {
+    req.user = cached.user;
+    return next();
+  }
+
   const { data: { user }, error } = await supabase.auth.getUser(token);
   if (error || !user) return res.status(401).json({ error: "Invalid token" });
+
+  tokenCache.set(token, { user, expiresAt: Date.now() + CACHE_TTL });
   req.user = user;
   next();
 };
@@ -576,8 +589,17 @@ const userVibes = new Map(); // userId -> vibeId
 io.use(async (socket, next) => {
   const token = socket.handshake.auth.token;
   if (!token) return next(new Error("No token"));
+
+  const cached = tokenCache.get(token);
+  if (cached && cached.expiresAt > Date.now()) {
+    socket.userId = cached.user.id;
+    return next();
+  }
+
   const { data: { user }, error } = await supabase.auth.getUser(token);
   if (error || !user) return next(new Error("Invalid token"));
+
+  tokenCache.set(token, { user, expiresAt: Date.now() + CACHE_TTL });
   socket.userId = user.id;
   next();
 });
@@ -657,6 +679,15 @@ io.on("connection", (socket) => {
 
 app.get("/api/users/online", auth, (req, res) => res.json([...onlineUsers.keys()]));
 app.get("/api/users/vibes", auth, (req, res) => res.json(Object.fromEntries(userVibes)));
+
+// ─── Global Error Guards (prevents server crash on unhandled rejections) ──────
+process.on("unhandledRejection", (reason) => {
+  console.error("Unhandled Rejection:", reason);
+});
+
+process.on("uncaughtException", (err) => {
+  console.error("Uncaught Exception:", err);
+});
 
 const PORT = process.env.PORT || 4000;
 httpServer.listen(PORT, () => console.log(`🚀 ChatWave on port ${PORT}`));
