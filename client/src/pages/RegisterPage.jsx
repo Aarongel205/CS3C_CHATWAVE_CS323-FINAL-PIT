@@ -192,16 +192,6 @@ export default function RegisterPage() {
             <Link to="/login" style={{ color: "#a584ff", fontWeight: 600, textDecoration: "none" }}>Sign in</Link>
           </p>
         </div>
-
-        {/* Setup reminder */}
-        <div style={{ marginTop: 16, background: "#13131a", border: "1px solid #2a2a3a", borderRadius: 14, padding: "14px 16px" }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#6b6b7f", textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 8 }}>
-            🔧 Recommended Supabase Setting
-          </div>
-          <div style={{ fontSize: 12, color: "#9898a8", lineHeight: 1.7 }}>
-            To avoid email issues, go to <strong style={{ color: "#e8e8f0" }}>Supabase Dashboard → Authentication → Providers → Email</strong> and disable <strong style={{ color: "#e8e8f0" }}>"Confirm email"</strong>. This lets users sign up and log in instantly.
-          </div>
-        </div>
       </div>
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
