@@ -72,7 +72,6 @@ export function VibePicker({ currentVibeId, onSelect, onClose }) {
   return (
     <div ref={ref} style={{
       position: "absolute",
-      bottom: "calc(100% + 10px)",
       left: 0,
       zIndex: 300,
       background: "#13131a",
@@ -81,6 +80,8 @@ export function VibePicker({ currentVibeId, onSelect, onClose }) {
       padding: "14px",
       boxShadow: "0 16px 48px rgba(0,0,0,0.75)",
       width: 260,
+      height: 250,
+      overflowX: "scroll"
     }}>
       {/* Header */}
       <div style={{ marginBottom: 12, paddingBottom: 10, borderBottom: "1px solid #2a2a3a" }}>
