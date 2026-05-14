@@ -65,6 +65,20 @@ Our platform was put through rigorous load testing across 10,000 requests spanni
 ![Alt text](https://github.com/Aarongel205/CS3C_CHATWAVE_CS323-FINAL-PIT/blob/main/Performance%20Testing%20%E2%80%94%20Apache%20JMeter.jpg?raw=true)
 
 
+Detailed Endpoint Performance:
+Endpoint,# Samples,Avg (ms),Min (ms),Max (ms),Std. Dev.
+Online Users,"1,000",13,0,210,24.65
+Profile/Login,"1,000",196,94,"1,440",144.11
+List Friends,"1,000",213,97,"2,863",215.56
+Get Messages,"1,000",388,195,"6,551",334.77
+List of Conversations,"1,000",983,437,"20,364",962.28
+Update Profile,"1,000",226,96,"13,657",587.60
+
+Parallel & Distributed System Analysis
+
+-High Throughput & Concurrency: The system's ability to handle 1,000 concurrent users with 0.00% errors confirms the effectiveness of our Event-Driven architecture (Socket.io) and Asynchronous API handling (Express async/await).
+
+
 
 
 
