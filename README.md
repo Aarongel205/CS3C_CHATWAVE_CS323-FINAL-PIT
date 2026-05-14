@@ -59,6 +59,10 @@ Throughput,127.3 req/sec,The system successfully managed over 127 transactions e
 Network Efficiency,103.2 KB/s,"Data flow remained optimized, with the largest payloads occurring during conversation fetches.
 
 
+Performance Testing — Apache JMeter
+Performance at Scale
+Our platform was put through rigorous load testing across 10,000 requests spanning 10 key operations and delivered a 0.00% error rate across the board. With an average response time of just 344ms and a total throughput of 151.9 requests/second, the system handles real-world demand with consistency and reliability. Peak loads reaching up to 24,592ms were absorbed without a single failure, demonstrating the robustness of our infrastructure under stress.
+![Alt text](https://github.com/Aarongel205/CS3C_CHATWAVE_CS323-FINAL-PIT/blob/main/Performance%20Testing%20%E2%80%94%20Apache%20JMeter.jpg?raw=true)
 
 
 
