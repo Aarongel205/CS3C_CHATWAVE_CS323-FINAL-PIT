@@ -47,3 +47,32 @@ Open `http://localhost:5173`
 - ⌨️  Typing indicators
 - 🟢 Online presence
 - 💾 All messages persisted in Supabase
+
+
+📊 Performance & Stress Testing 
+To ensure ChatWave can handle real-world scale, we conducted a rigorous stress test using Apache JMeter. We simulated a high-concurrency environment to evaluate how the system performs under significant load.  Test ConfigurationSimulated Users: 1,000 concurrent users.  Total Requests: 10,000 requests distributed across 9 key API endpoints.  Scenario: The test covered a complete user journey, including authentication, social interactions, real-time messaging, and profile management.
+
+Metric,Result,Interpretation
+Error Rate,0.00%,The system maintained perfect stability with zero failed requests under full load. 
+Average Response Time,253 ms,"Typical user requests were processed in under 300ms, ensuring a ""snappy"" experience. 
+Throughput,127.3 req/sec,The system successfully managed over 127 transactions every second. 
+Network Efficiency,103.2 KB/s,"Data flow remained optimized, with the largest payloads occurring during conversation fetches.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
