@@ -8,7 +8,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
 <p>
   <p>Edit Profile</p>
   <p>
-    <img src="documents/editProfile.png" alt="figma" width="900" height="200"/>
+    <img src="documents/editProfile.png" alt="figma" width="500" height="200"/>
   </p>
 </p>
 
