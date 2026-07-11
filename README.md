@@ -8,7 +8,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
 <div display="flex" >
   <div>
       <p>Edit profile</p>
-      <img src="documents/editProfile.png" width="500" height="900"/>
+      <img src="documents/editProfile.png" width="700" height="900"/>
     </div>
   <div>
       <p>Edit profile</p>
