@@ -4,6 +4,31 @@
 Full-stack real-time chat with friends system and group chats built on **React + Express + Supabase + Socket.io**.
 ---
 
+## ✨ Features
+
+- 🔐 Auth (register / login / logout via Supabase)
+- 👤 User profiles (editable display name, bio, avatar)
+- 🔍 Search users by username
+- 🤝 Friend requests (send / accept / decline)
+- 💬 1-on-1 DM conversations
+- 👥 Group chats (create, add/remove members, admin roles)
+- ⚡ Real-time messaging via Socket.io
+- ⌨️  Typing indicators
+- 🟢 Online presence
+- 💾 All messages persisted in Supabase
+
+## 🏗️ Tech Stack
+
+<h2> 🚀 &nbsp;Some Tools I Have Used and Learned</h2>
+<p align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="supabase" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/socketdotio.svg" alt="socketio" width="45" height="45"/>
+</p>
+
 ## Features
 <div display="flex" >
   <div>
@@ -57,13 +82,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
 </div>
 
 
-## 🏗️ Tech Stack
 
-- **Frontend**: React + Vite + TailwindCSS
-- **Backend**: Express.js + Socket.io
-- **Database**: Supabase (PostgreSQL)
-- **Auth**: Supabase Auth
-- **Real-time**: Socket.io
 
 ---
 ## 🚀 Local Development
@@ -87,19 +106,6 @@ cd client && npm run dev
 Open `http://localhost:5173`
 
 ---
-
-## ✨ Features
-
-- 🔐 Auth (register / login / logout via Supabase)
-- 👤 User profiles (editable display name, bio, avatar)
-- 🔍 Search users by username
-- 🤝 Friend requests (send / accept / decline)
-- 💬 1-on-1 DM conversations
-- 👥 Group chats (create, add/remove members, admin roles)
-- ⚡ Real-time messaging via Socket.io
-- ⌨️  Typing indicators
-- 🟢 Online presence
-- 💾 All messages persisted in Supabase
 
 
 ## 📊 Performance & Stress Testing 
