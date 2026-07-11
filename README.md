@@ -17,9 +17,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
 - 🟢 Online presence
 - 💾 All messages persisted in Supabase
 
-## 🏗️ Tech Stack
-
-<h2> 🚀 &nbsp;Some Tools I Have Used and Learned</h2>
+<h2> 🏗️ &nbsp; Tech Stack</h2>
 <p align="left">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="45" height="45"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="45" height="45"/>
