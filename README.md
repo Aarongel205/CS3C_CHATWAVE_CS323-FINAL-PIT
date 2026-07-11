@@ -7,7 +7,11 @@ Full-stack real-time chat with friends system and group chats built on **React +
 ## Features
 <div display="flex" >
   <div>
-      <p>Edit profile</p>
+      <p>Login</p>
+      <img src="documents/login.png" width="800" height="900"/>
+  </div>
+   <div>
+      <p>Signup/Register</p>
       <img src="documents/login.png" width="800" height="900"/>
   </div>
   <div>
@@ -15,8 +19,8 @@ Full-stack real-time chat with friends system and group chats built on **React +
       <img src="documents/editProfile.png" width="800" height="900"/>
   </div>
   <div>
-      <p>Edit profile</p>
-      <img src="documents/editProfile.png" width="800" height="900"/>
+      <p>Set Vibe</p>
+      <img src="documents/vibe.png" width="800" height="900"/>
   </div>
 </div>
 
