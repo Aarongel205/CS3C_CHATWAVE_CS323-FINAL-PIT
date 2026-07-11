@@ -1,8 +1,9 @@
 ![Alt text](https://github.com/Aarongel205/CS3C_CHATWAVE_CS323-FINAL-PIT/blob/main/CS_326-CS3C%20Adanza,%20Bentuzal,%20Dumdum,%20Inojales,%20Plariza.png?raw=true)
 # 💬 ChatWave — Real-Time Chat App
 
-Full-stack real-time chat with friends system and group chats built on **React + Express + Supabase + Socket.io**.
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF61D2,100:8A2BE2&height=150&section=header&text=Welcome%20Everyone!&fontSize=50&fontColor=FFFFFF"/>
+</p>
 
 ## ✨ Features
 
