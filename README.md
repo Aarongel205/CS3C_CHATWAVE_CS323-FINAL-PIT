@@ -4,11 +4,11 @@
 Full-stack real-time chat with friends system and group chats built on **React + Express + Supabase + Socket.io**.
 ---
 
-##Features
+## Features
 <p>
   <p>Edit Profile</p>
   <p>
-    <img src="documents/editProfile.png" alt="figma" width="45" height="45"/>
+    <img src="documents/editProfile.png" alt="figma" width="100" height="200"/>
   </p>
 </p>
 
