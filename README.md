@@ -12,7 +12,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
   </div>
    <div>
       <p>Signup/Register</p>
-      <img src="documents/login.png" width="800" height="900"/>
+      <img src="documents/signUp.png" width="800" height="900"/>
   </div>
   <div>
       <p>Edit profile</p>
@@ -21,6 +21,34 @@ Full-stack real-time chat with friends system and group chats built on **React +
   <div>
       <p>Set Vibe</p>
       <img src="documents/vibe.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Add Friends</p>
+      <img src="documents/addFriend.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Chat</p>
+      <img src="documents/chat.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Create Group Chat</p>
+      <img src="documents/group.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Add Members</p>
+      <img src="documents/chatMembers.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>See list of friends</p>
+      <img src="documents/listFriend.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>See pending Request</p>
+      <img src="documents/pendingRequest.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Role based group chat admin/member</p>
+      <img src="documents/role.png" width="800" height="900"/>
   </div>
 </div>
 
