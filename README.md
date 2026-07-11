@@ -136,7 +136,7 @@ Update Profile,"1,000",226,96,"13,657",587.60
 -High Throughput & Concurrency: The system's ability to handle 1,000 concurrent users with 0.00% errors confirms the effectiveness of our Event-Driven architecture (Socket.io) and Asynchronous API handling (Express async/await).
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF61D2,100:8A2BE2&height=150&section=footer&text=Welcome%20Everyone!&fontSize=50&fontColor=FFFFFF"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF61D2,100:8A2BE2&height=100&section=footer&text=Thank%20you%20for%20visiting!&fontSize=50&fontColor=FFFFFF"/>
 </p>
 
 
