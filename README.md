@@ -2,8 +2,16 @@
 # 💬 ChatWave — Real-Time Chat App
 
 Full-stack real-time chat with friends system and group chats built on **React + Express + Supabase + Socket.io**.
-
 ---
+
+##Features
+<p>
+  <p>Edit Profile</p>
+  <p>
+    <img src="documents/editProfile.png" alt="figma" width="45" height="45"/>
+  </p>
+</p>
+
 
 ## 🏗️ Tech Stack
 
