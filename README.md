@@ -36,6 +36,10 @@ Full-stack real-time chat with friends system and group chats built on **React +
   </div>
   <div>
       <p>Add Members</p>
+      <img src="documents/addMembers.png" width="800" height="900"/>
+  </div>
+  <div>
+      <p>Chat Members</p>
       <img src="documents/chatMembers.png" width="800" height="900"/>
   </div>
   <div>
