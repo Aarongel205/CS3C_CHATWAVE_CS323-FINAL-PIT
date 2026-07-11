@@ -5,7 +5,7 @@ Full-stack real-time chat with friends system and group chats built on **React +
 ---
 
 ## Features
-<div display="flex" flex-direction="row">
+<div display="flex"  flexDirection="row">
   <div display="flex">
     <div>
       <p>Edit profile</p>
